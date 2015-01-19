@@ -1,0 +1,23 @@
+{
+  "name": "Demo of front end technologies",
+  "version": "0.0.0",
+  "homepage": "https://github.com/khalid-bd/techno_demo",
+  "description": "A demo for compass, bower and grunt",
+  "keywords": [],
+  "authors": [
+    "Khalid Sookia <khalidsookia@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "vendor"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap-sass": "~3.3.1"
+  }
+}
