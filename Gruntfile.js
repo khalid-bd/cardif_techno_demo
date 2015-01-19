@@ -18,18 +18,23 @@ module.exports = function(grunt) {
     },
     concat: {
       options: {
-        banner: '<%= banner %>',
-        stripBanners: true
+        
       },
-    },
-    uglify: {
-      options: {
-        banner: '<%= banner %>'
+      js: {
+        src: ['vendor/angularjs/angular.min.js', 'vendor/jquery/dist/jquery.js', 'bootstrap-sass/assets/javascripts/bootstrap.js', 'bootstrap-sass/assets/javascripts/bootstrap-sprockets.js', 'vendor/techno_demo/js/main.js'],
+        dest: 'dist/js/all-concat.js',
       }
     },
+    uglify: {
+      my_target: {
+        files: {
+          'dist/js/all-min.js': ['dist/js/all-concat.js']
+        }
+      }
+    }
   });
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'concat']);
+  grunt.registerTask('default', ['clean', 'concat', 'uglify']);
 
 };
