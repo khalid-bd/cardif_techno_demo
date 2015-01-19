@@ -1,0 +1,9 @@
+/* line 3, ../scss/main.scss */
+p {
+  -moz-border-radius: 10px 50px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px 50px;
+  -moz-box-shadow: 10px 5px 10px 10px #333;
+  -webkit-box-shadow: 10px 5px 10px 10px #333;
+  box-shadow: 10px 5px 10px 10px #333;
+}

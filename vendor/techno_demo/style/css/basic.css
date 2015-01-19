@@ -1,0 +1,6 @@
+/* line 1, ../scss/basic.scss */
+p {
+  display: inline-block;
+  width: 20%;
+  margin-left: 2.5%;
+}
